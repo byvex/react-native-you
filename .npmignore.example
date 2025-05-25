@@ -1,0 +1,15 @@
+# Ignore example and dev-related files
+example/
+node_modules/
+*.log
+*.config.js
+babel.config.js
+metro.config.js
+tsconfig.json
+*.tsbuildinfo
+.eslintrc.*
+.prettier*
+.vscode/
+__tests__/
+test/
+coverage/
