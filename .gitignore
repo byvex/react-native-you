@@ -28,3 +28,4 @@ Thumbs.db
 
 example/node_modules/
 example/dist/
+/*.tgz

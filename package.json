@@ -1,6 +1,6 @@
 {
   "name": "react-native-you",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modern UI components for React Native — inspired by Android and Flutter design.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,14 +14,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup"
   },
+  "bin": {
+    "react-native-you": "./bin.js"
+  },
   "peerDependencies": {
-    "react": "^19.1.0",
-    "react-native": "^0.79.2",
-    "react-native-safe-area-context": "*"
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.6.3"
   },
   "devDependencies": {
+    "@gorhom/bottom-sheet": "^5.1.6",
+    "@react-navigation/native": "^7.1.14",
     "@types/react": "^19.1.5",
     "metro-react-native-babel-preset": "^0.77.0",
+    "react-native-gesture-handler": "^2.26.0",
+    "react-native-reanimated": "^3.18.0",
+    "react-native-safe-area-context": "^5.5.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   },
@@ -43,9 +54,5 @@
   "bugs": {
     "url": "https://github.com/byvex/react-native-you/issues"
   },
-  "homepage": "https://github.com/byvex/react-native-you#readme",
-  "dependencies": {
-    "react-native-gesture-handler": "^2.25.0",
-    "react-native-reanimated": "^3.17.5"
-  }
+  "homepage": "https://github.com/byvex/react-native-you#readme"
 }
